@@ -1,0 +1,65 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Joshua Kelly - Software Engineer">
+      <meta name="description" content="I’m a Software Engineer: Full-Stack Web and Android. I’ve written production-level code for large-scale, live-streaming apps that process 10K requests/sec.">
+      <meta name="keywords" content="software engineer, full-stack, front-end, web, android, JavaScript, React, Kotlin, Java, SpringBoot, PostgreSQL, Jetpack Compose, Retrofit, Moshi, RxJava, Dagger, Git">
+      <meta name="robots" content="index, follow">
+      <link rel="icon" type="image/png" href="favicon.png">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Joshua Kelly - Software Engineer</title>
+    </head>
+    <body>
+      <div class="container">
+        <!-- <img class="profile-pic" src="joshua-kelly.png"> -->
+        <p class="name">Joshua Kelly</p>
+        <p class="subtitle">Full-Stack Web + Android Engineer</p>
+        <ul class="links">
+            <li>
+              <a href="javascript:void(0);" onclick="copyEmailToClipboard();"><i class="fas fa-envelope"></i></a>
+              <span id="email">joshuakellyeng@gmail.com</span>
+            </li>
+            <li><a href="https://www.linkedin.com/in/joshuakellyeng" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/joshuakellyeng" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="resume.html" target="_blank"><i class="fas fa-file"></i></a></li>
+        </ul>
+        <div class="projects">
+          <ul class="links">
+              <li><a href="https://github.com/joshuakellyeng/left-bank-burger" target="_blank" class="projectLink"><img src="left-bank.png" class="projectImage"></a></li>
+              <li><a href="https://github.com/joshuakellyeng/pill-mate" target="_blank" class="projectLink"><img src="pill-mate.png" class="projectImage"></a></li>
+              <li><a href="https://github.com/joshuakellyeng/sans-comic" target="_blank" class="projectLink"><img src="sans-comic.png" class="projectImage"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    <script>
+      function copyEmailToClipboard() {
+          const emailElement = document.getElementById('email');
+          const range = document.createRange();
+          range.selectNode(emailElement);
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
+          document.execCommand('copy');
+          window.getSelection().removeAllRanges();
+          alert('Email copied to clipboard: ' + emailElement.textContent);
+      }
+    </script>
+    </body>
+</html>
